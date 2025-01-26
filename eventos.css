@@ -1,0 +1,246 @@
+body {
+  margin: auto;
+  max-width: 1280px;
+  background-image: url('images/globos.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+}
+/* imagen_clown */
+
+.clown{
+  width: auto;   
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  text-align: center;
+  justify-items: center;
+  align-content: center;
+  
+  
+     
+}
+
+.item1{
+  
+  align-content: center;
+  text-align: center;
+  color: #49149f;
+  
+}
+
+
+.item2{
+  
+      
+  text-align: center;
+  align-content: center;
+  color: #000000;
+  
+}
+.item3{
+  
+  font-family: "Chewy", system-ui;
+  font-size: 50px;    
+  font-style: normal;;
+  justify-content: center; 
+  align-content: center;
+  color: #000000;
+  
+}
+
+/*Barra de Navegacion*/
+
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  max-width: 1280px; 
+  display: grid;
+  grid-template-columns:repeat(5, 1fr);
+  gap: 10px;
+  text-align: center;    
+}
+
+li{
+  width: 90%;  
+  background-color: #ffbb00; /* Green */
+  color: #000000;
+  padding: 2px;
+  gap: 2px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: auto;
+}
+  
+li a{ 
+
+  color: rgb(0, 0, 0);
+  font-family: "Chewy";
+  text-align:center;    
+  text-decoration: none;
+  justify-content: center;
+  align-content: center;
+  margin: 10px;
+  
+}
+
+li:hover {
+  background-color: rgb(182, 174, 174);
+}
+
+.active {
+  background-color: #ffffff;
+}
+
+/* Header */
+
+.header{
+  max-width: 1280px;
+  background-image: url(images/bubbles-14565_256.gif);
+  color: #ffffff;
+  text-align: center;  
+  margin: 10px;
+  padding: 15px;
+}
+
+
+/*Barra de Navegacion*/
+
+
+/* Galeria */
+.contenedor{    
+  font-family: "Grandstander", cursive;  
+  max-width: 1280px;
+  background: rgba(255, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  margin: auto;  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px; 
+  text-align: center;
+  
+  justify-content: center;  
+}
+
+.imagenes{
+    width: 100%;
+    
+    background: rgba(0, 179, 255, 0.7);
+    padding: 5px;  
+    border-radius: 20px;    
+
+}
+
+
+img{     
+  width: 100%;
+  border-radius: 15px; 
+  height: 400px;    
+  align-content:center; 
+  align-self: stretch;
+  
+}
+
+
+
+#espuma{
+    background: #cbc501;
+    padding: 10px;  
+    
+    border-radius: 10px;    
+}
+#variedad{
+    background: #0c1962;
+    
+    padding: 10px;  
+    border-radius: 20px;    
+}
+#felices{
+    background: #500582;
+    
+    padding: 10px;  
+    border-radius: 20px;    
+}
+/* Footer */
+
+.footer{
+  margin: 15px;
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  align-content: center;
+}
+i{
+  color: #ffffff;
+  font-size:40px ;
+  
+  padding: 10px;
+  align-content: center;
+  
+}
+
+.iconos{
+  align-content: center;
+}
+.button {
+  background-color: #ffbb00; /* Green */
+  border: 2px solid black;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Chewy";
+  font-size: 20px;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+.boton1 {border-radius: 12px;}
+.boton2 {border-radius: 12px;}
+
+
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width:650px) {
+  .contenedor{
+      grid-template-columns: repeat(2, 1fr);
+      align-content: center;
+      
+  }     
+}
+@media screen and (max-width:430px) {
+  .contenedor, .footer{
+      align-content: center;
+      grid-template-columns: repeat(1, 1fr);
+      grid-column: 1 / -1;
+    }
+  .clown{
+    grid-template-columns: repeat(1, 1fr);
+    grid-column: 1 / -1;
+  }    
+     
+}
+@media screen and (max-width:576px){
+  .contenedor, .navigation{
+      
+      grid-template-columns: repeat(1, 1fr);
+      grid-column: 1 / -1;
+      
+      
+  }   
+}  
+
+@media screen and (max-width:790px){
+  .footer{
+      
+      grid-template-columns: repeat(1, 1fr);
+      grid-column: 1 / -1;
+      
+      
+  }   
+}  
