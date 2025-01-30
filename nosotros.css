@@ -7,87 +7,36 @@ body {
 }
 /* imagen_clown */
 
-.clown{
-    width: auto;    
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-    text-align: center;
-    justify-items: center;
-    align-content: center;
-    
-    
-       
-}
-
-.item1{
-    max-width: 300px;
-    align-content: center;
-    text-align: center;
-    color: #000000;
-    
-}
-
-
-.item2{
-    max-width: 300px;
-        
-    text-align: center;
-    align-content: center;
-    color: #000000;
-    
-}
-.item3{
-    
-    font-family: "Chewy", system-ui;
-    font-size: 50px;    
-    font-style: normal;;
-    justify-content: center;    
-    align-content: center;
-    color: #000000;
-    
-}
-
-/*Barra de Navegacion*/
-
-ul {
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
-    max-width: 1000px; 
-    display: grid;
-    grid-template-columns:repeat(5, 1fr);
-    gap: 10px;
-    text-align: center; 
-    align-content: center;   
-  }
+.container{
+  justify-content: center;
+  text-align: center;
   
-  li{
-    background-color: #ffffff; /* Green */
-    color: #000000;
-    padding: 5px;
-    gap: 2px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 10px;
-  }
-    
-  li a{   
-    color: rgb(0, 0, 0);
-    font-family: "Chewy";
-    text-align:center;    
-    text-decoration: none;
-    justify-content: center;
-    align-content: center;
-    
-  }
+}
+.item2{  
   
-  li:hover {
-    background-color: rgb(182, 174, 174);
-  }
+  align-content: center;
+}
+.item2 img{
   
-  .active {
-    background-color: #ffffff;
-  }
+  width:180px; 
+}
+.item3{  
+  text-align: center;  
+  font-family: "Chewy", system-ui;  
+}
+/* Botones */
+.btn{  
+  border:1px solid rgb(218, 218, 232);
+  font-family: Chewy;
+  width: 80%;
+  margin: 7px;
+}
+/* /*Barra de Navegacion*/
+.navi{
+  margin: auto;
+  text-align: center;
+  margin-top: 15px;
+}
 
 /* Header */
 
