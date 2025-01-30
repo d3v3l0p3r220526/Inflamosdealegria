@@ -4,26 +4,18 @@ body {
     background-image: url('images/desktop-wallpaper-colorful-bubbles-bg-background.jpg');
     background-attachment: fixed;
     background-size: cover;
+    font-family: "Chewy", system-ui;  
 }
 /* imagen_clown */
 
 .container{
-  justify-content: center;
+  
   text-align: center;
   
 }
-.item2{  
-  
-  align-content: center;
-}
-.item2 img{
-  
-  width:180px; 
-}
-.item3{  
-  text-align: center;  
-  font-family: "Chewy", system-ui;  
-}
+
+
+
 /* Botones */
 .btn{  
   border:1px solid rgb(218, 218, 232);
@@ -101,48 +93,61 @@ img{
     border-radius: 15px;     
     padding: 5px;  
 }
-
-/* Footer */
-
-.footer{
-    margin: 15px;
+.header2{
+  margin: 10px;
+  text-align: center;
+  background-image: url(images/hbday.gif);
+  color: aliceblue;
+}
+  /* Footer */
+  
+  .footer{
+    margin: auto;    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     
-    text-align: center;
-    align-content: center;
 }
 i{
     color: #ffffff;
-    font-size:40px ;
-    
+    font-size:50px ;    
     padding: 10px;
-    align-content: center;
-    
+    align-content: center;    
+}  
+.iconos, .pie{
+    text-align:center ;
 }
-
-.iconos{
-    align-content: center;
+.pie{
+  color: #ffffff;
 }
 .button {
+    width: 70%;
     background-color: #ffbb00; /* Green */
     border: 2px solid black;
     color: rgb(0, 0, 0);
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    margin: auto;
     text-decoration: none;
     display: inline-block;
     font-family: "Chewy";
-    font-size: 20px;
-    margin: 10px 10px;
-    cursor: pointer;
-  }
-
+    font-size: 20px;    
+    cursor: pointer;    
+  }  
+  
   .boton1 {border-radius: 12px;}
   .boton2 {border-radius: 12px;}
-
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+  @media screen and (max-width:900px) {
+    .footer{
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        justify-content: center;
+        align-content: center;
+    }
 
  /*  @media only screen and (min-width: 600px) { */
   @media screen and (max-width:600px) {
-    .contenedor, .footer{
+    .contenedor{
         align-content: center;
         grid-template-columns: repeat(1, 1fr);
         grid-column: 1 / -1;

@@ -3,26 +3,19 @@ body {
   margin: auto;
   background-image: url('images/globos.jpg');
   background-attachment: fixed;
-  background-size: cover;   
+  background-size: cover;
+  font-family: Chewy;    
 }
 
-.container{
-  justify-content: center;
-  text-align: center;
-  
+.container{  
+  text-align: center;  
 }
 .item2{  
   
   align-content: center;
 }
-.item2 img{
-  
-  width:180px; 
-}
-.item3{  
-  text-align: center;  
-  font-family: "Chewy", system-ui;  
-}
+
+
 /* Botones */
 .btn{  
   border:1px solid rgb(218, 218, 232);
@@ -80,48 +73,60 @@ img{
     height: 300px;
     border-radius: 15px;   
     padding: 5px;  
+    
+
+}
+.header2{
+  margin: 10px;
+  text-align: center;
+  background-image: url(images/hbday.gif);
+  color: aliceblue;
 }
 
-/* Footer */
-
-.footer{
-       
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: auto;
-    
-    
+ /* Footer */
+  
+ .footer{
+  text-align: center;
+  margin: auto; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
 }
-i a{
-  
-  
+i{
   color: #ffffff;
-  font-size:40px ;    
+  font-size:50px ;    
   padding: 10px;
   align-content: center;    
+}  
+.iconos, .pie{
+  text-align:center ;
 }
-
-
-
-
+.pie{
+color: #ffffff;
+}
 .button {
-    width: 80%;
-    background-color: #ffbb00; /* Green */
-    border: 2px solid black;
-    color: rgb(0, 0, 0);
-    padding: 20px;   
-    text-decoration: none;
-    
-    font-family: "Chewy";
-    font-size: 20px;    
-    cursor: pointer;    
-  }
+  width: 70%;
+  background-color: #ffbb00; /* Green */
+  border: 2px solid black;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Chewy";
+  font-size: 20px;    
+  cursor: pointer;    
+}  
 
-  .boton1 {
-    border-radius: 12px;    
-    margin: 15px;
-  }
-  .boton2 {border-radius: 12px;}
+.boton1 {border-radius: 12px;}
+.boton2 {border-radius: 12px;}
+
+.header2{
+text-align: center;
+background-image: url(images/hbday.gif);
+color: aliceblue;
+}
 
 
 
